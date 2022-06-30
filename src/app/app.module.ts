@@ -18,6 +18,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: 'home', component: AppComponent},
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent},
       {path: 'cart' , component: CartComponent},
