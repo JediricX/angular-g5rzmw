@@ -31,7 +31,7 @@ export class CartComponent implements OnInit {
   onSubmit(customerData){
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
-    console.warn('Pedido enviado', customerData);
+    console.warn('Pedido creado', customerData);
     this.router.navigate(['home']);
   }
 
