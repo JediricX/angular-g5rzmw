@@ -19,13 +19,14 @@ export class CartService {
     return this.items;
   }
 
-  clearItems(){
+  clearCart(){
     this.items = [];
     return this.items;
   }
 
   getShippingPrices(){
-    this.httpClient.get('/assets/shipping.json');
+    return this.httpClient.get('/assets/shipping.json');
+    
   }
 
 }
